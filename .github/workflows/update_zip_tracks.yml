@@ -1,0 +1,62 @@
+name: Update tracks that use zip
+
+on:
+  schedule:
+    - cron: '7 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  ARTIFACT_PAT: ${{ secrets.ARTIFACT_PAT }}
+
+jobs:
+  check_and_update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Backfill missing 'added' timestamps
+        run: |
+          set -euo pipefail
+          now=$(date +%s)
+          for f in modules/*/track.yaml; do
+            if ! grep -q "^added:" "$f"; then
+              echo "added: $now" >> "$f"
+              git add "$f"
+            fi
+          done
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Fetch all module builds
+        run: |
+          pip install --quiet requests pyyaml
+          python .github/scripts/fetch_module_builds.py
+          git add modules/
+
+      - name: Commit and push
+        id: commit
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore: automated module updates"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trigger sync-build-deploy
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run sync_build_deploy.yml -f run_sync=Yes

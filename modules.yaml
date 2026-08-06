@@ -1,0 +1,208 @@
+# modules.yaml — Master configuration for Stratos module fetcher
+# Each module defines: metadata keys (written to track.yaml) + source blocks (fetch config)
+#
+# Metadata keys per module:
+#   id        — must match module.prop id= field exactly
+#   enabled   — master switch, false = skip entirely
+#   verified  — shown in MMRL as verified badge
+#   categories— shown in MMRL for filtering
+#   license   — optional, defaults to upstream repo license
+#   icon      — optional, defaults to upstream owner avatar
+#   owner     — upstream GitHub owner (for fetching + readme derivation)
+#   repo      — upstream GitHub repo (for fetching + readme derivation)
+#
+# Source blocks (release/prerelease/actions/static):
+#   enabled   — true/false toggle
+#   keep      — absolute retention cap for this source
+#   preserve  — (release only) guarantees >= 1 stable always retained
+#   pattern   — regex or glob. Empty = first .zip wins.
+#
+# Priority for dedup: Release(0) > Pre-release(1) > Action(2)
+
+modules:
+  - id: AZenith
+    enabled: true
+    verified: true
+    categories: ["Performance","System"]
+    owner: Liliya2727
+    repo: AZenith
+    release:
+      enabled: true
+      keep: 1
+      preserve: true
+      pattern: "*.zip"
+    prerelease:
+      enabled: true
+      keep: 0
+    actions:
+      enabled: false
+      keep: 0
+
+  - id: Frosty
+    enabled: true
+    verified: false
+    categories: ["Performance","System", "WebUI"]
+    owner: Drsexo
+    repo: Frosty
+    release:
+      enabled: true
+      keep: 1
+      preserve: true
+      pattern: "*.zip"
+    prerelease:
+      enabled: false
+      keep: 0
+    actions:
+      enabled: false
+      keep: 0
+
+  - id: StylizeText
+    enabled: true
+    verified: false
+    categories: ["Theme", "Font", "Emoji", "WebUI"]
+    owner: RipperHybrid
+    repo: FontCraft
+    release:
+      enabled: true
+      keep: 1
+      preserve: true
+      pattern: "*.zip"
+    prerelease:
+      enabled: false
+      keep: 0
+    actions:
+      enabled: false
+      keep: 0
+
+  - id: playintegrity
+    enabled: true
+    verified: false
+    categories: ["Integrity", "Tools", "WebUI"]
+    owner: MeowDump
+    repo: Integrity-Box
+    release:
+      enabled: true
+      keep: 1
+      preserve: true
+      pattern: "*.zip"
+    prerelease:
+      enabled: true
+      keep: 1
+      pattern: "*.zip"
+    actions:
+      enabled: false
+      keep: 0
+
+  - id: rezygisk
+    enabled: true
+    verified: false
+    categories: ["Tools", "WebUI"]
+    owner: PerformanC
+    repo: ReZygisk
+    release:
+      enabled: true
+      keep: 1
+      preserve: true
+      pattern: "*.zip"
+    prerelease:
+      enabled: false
+      keep: 0
+    actions:
+      enabled: false
+      keep: 0
+
+  - id: tricky_store
+    enabled: true
+    verified: false
+    categories: ["Integrity", "Tools"]
+    owner: Enginex0
+    repo: TEESimulator-RS
+    release:
+      enabled: true
+      keep: 1
+      preserve: true
+      pattern: "*.zip"
+    prerelease:
+      enabled: false
+      keep: 0
+    actions:
+      enabled: false
+      keep: 0
+
+  - id: zygisk-detach
+    enabled: true
+    verified: true
+    categories: ["Tools"]
+    owner: j-hc
+    repo: zygisk-detach
+    release:
+      enabled: true
+      keep: 1
+      preserve: true
+      pattern: "*.zip"
+    prerelease:
+      enabled: false
+      keep: 0
+    actions:
+      enabled: false
+      keep: 0
+
+  - id: zygisk_lsposed
+    enabled: true
+    verified: true
+    categories: ["Tools"]
+    static:
+      enabled: true
+      keep: 1
+      url: "https://lsposed.zip"
+      changelog_url: "https://lsposed.zip/changelog.md"
+    release:
+      enabled: false
+      keep: 0
+      preserve: false
+    prerelease:
+      enabled: false
+      keep: 0
+    actions:
+      enabled: false
+      keep: 0
+
+  - id: zygisk_vector
+    enabled: true
+    verified: true
+    categories: ["Tools"]
+    owner: JingMatrix
+    repo: Vector
+    release:
+      enabled: true
+      keep: 1
+      preserve: true
+      pattern: "-Release\\.zip$"
+    prerelease:
+      enabled: false
+      keep: 0
+    actions:
+      enabled: true
+      keep: 2
+      workflow_file: core.yml
+      pattern: "-release"
+
+  - id: zygisksu
+    enabled: true
+    verified: false
+    categories: ["Tools"]
+    owner: JingMatrix
+    repo: NeoZygisk
+    release:
+      enabled: true
+      keep: 1
+      preserve: true
+      pattern: "-release\\.zip$"
+    prerelease:
+      enabled: false
+      keep: 0
+    actions:
+      enabled: true
+      keep: 2
+      workflow_file: ci.yml
+      pattern: "-release"

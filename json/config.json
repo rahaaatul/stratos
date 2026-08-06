@@ -1,0 +1,13 @@
+{
+  "id": "stratos",
+  "name": "Stratos Repository",
+  "website": "https://github.com/rahaaatul/stratos",
+  "support": null,
+  "donate": "https://ko-fi.com/rahaaatul",
+  "submission": null,
+  "base_url": "https://rahaaatul.github.io/stratos/",
+  "description": "Curated modules for Magisk",
+  "max_num": 3,
+  "enable_log": true,
+  "log_dir": "log"
+}

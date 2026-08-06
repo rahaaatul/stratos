@@ -1,0 +1,375 @@
+{
+  "id": "rahithtos",
+  "name": "Stratos Repository",
+  "website": "https://github.com/rahaaatul/stratos",
+  "support": null,
+  "donate": "https://ko-fi.com/rahaaatul",
+  "submission": null,
+  "cover": "https://rahaaatul.github.io/stratos/assets/cover.webp",
+  "description": "Curated modules for Magisk",
+  "metadata": {
+    "version": 1,
+    "timestamp": 1786021343.187237
+  },
+  "modules": [
+    {
+      "id": "TA_utl",
+      "name": "Tricky Addon Enhanced",
+      "version": "v5.48.0",
+      "versionCode": 50051,
+      "author": "Enginex0",
+      "description": "Enhanced TrickyStore addon with dual-source keybox, auto security patch, conflict detection & sleek WebUI",
+      "added": 1786021236,
+      "categories": [
+        "Integrity Tools",
+        "WebUI"
+      ],
+      "license": "GPL-3.0",
+      "readme": "https://raw.githubusercontent.com/Enginex0/tricky-addon-enhanced/refs/heads/main/README.md",
+      "verified": true,
+      "timestamp": 1777653181.0,
+      "size": 10384346,
+      "permissions": [
+        "magisk.permission.SERVICE",
+        "magisk.permission.POST_FS_DATA",
+        "magisk.permission.ACTION",
+        "mmrl.permission.APKS"
+      ],
+      "features": {
+        "service": true,
+        "post_fs_data": true,
+        "action": true,
+        "apks": true
+      },
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1786021236,
+        "source": "https://github.com/Enginex0/tricky-addon-enhanced",
+        "antifeatures": null,
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/TA_utl/track.yaml"
+      },
+      "versions": [
+        {
+          "timestamp": 1786021236,
+          "version": "v5.48.0",
+          "versionCode": 50051,
+          "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/TA_utl/v5.48.0_50051.zip",
+          "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/TA_utl/v5.48.0_50051.md",
+          "size": 10384346,
+          "checksum": "f731f447fa0e6ffb1495c5382814edee327698dbd9b90340c47af2731b075fa8",
+          "source": "release"
+        }
+      ]
+    },
+    {
+      "id": "com.chiller3.msd",
+      "name": "MSD",
+      "version": "v2.4",
+      "versionCode": 132096,
+      "author": "chenxiaolong",
+      "description": "Emulate mass storage devices over USB",
+      "added": 1786021237,
+      "minApi": 30,
+      "categories": [
+        "Tools"
+      ],
+      "license": "GPL-3.0",
+      "readme": "https://raw.githubusercontent.com/chenxiaolong/MSD/refs/heads/master/README.md",
+      "verified": false,
+      "timestamp": 1784338009.0,
+      "size": 4154880,
+      "permissions": [
+        "magisk.permission.SERVICE",
+        "magisk.permission.POST_FS_DATA",
+        "mmrl.permission.APKS"
+      ],
+      "features": {
+        "service": true,
+        "post_fs_data": true,
+        "apks": true
+      },
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1786021237,
+        "source": "https://github.com/chenxiaolong/MSD",
+        "antifeatures": null,
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/com.chiller3.msd/track.yaml"
+      },
+      "versions": [
+        {
+          "timestamp": 1786021250,
+          "version": "v2.4",
+          "versionCode": 132096,
+          "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/com.chiller3.msd/v2.4_132096.zip",
+          "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/com.chiller3.msd/v2.4_132096.md",
+          "size": 4154880,
+          "checksum": "638dca60fbf2fcb678882648703b7bb8ebc8ea2e1982c4226a7e2bb79a7bd489",
+          "source": "release"
+        }
+      ]
+    },
+    {
+      "id": "rezygisk",
+      "name": "ReZygisk",
+      "version": "v1.0.0 (515-333d423-release)",
+      "versionCode": 515,
+      "author": "The PerformanC Organization",
+      "description": "Standalone implementation of Zygisk.",
+      "added": 1786021253,
+      "minApi": 24,
+      "categories": [
+        "Tools",
+        "WebUI"
+      ],
+      "icon": "https://avatars.githubusercontent.com/u/120441268?v=4",
+      "license": "GPL-3.0",
+      "readme": "https://raw.githubusercontent.com/PerformanC/ReZygisk/main/README.md",
+      "verified": false,
+      "timestamp": 1778449348.0,
+      "size": 506334,
+      "permissions": [
+        "magisk.permission.SERVICE",
+        "magisk.permission.POST_FS_DATA",
+        "magisk.permission.SEPOLICY",
+        "kernelsu.permission.WEBUI"
+      ],
+      "features": {
+        "service": true,
+        "post_fs_data": true,
+        "sepolicy": true,
+        "webroot": true
+      },
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1786021253,
+        "source": "https://github.com/PerformanC/ReZygisk",
+        "antifeatures": null,
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/rezygisk/track.yaml"
+      },
+      "versions": [
+        {
+          "timestamp": 1786021257,
+          "version": "v1.0.0",
+          "versionCode": 515,
+          "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/rezygisk/v1.0.0_515.zip",
+          "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/rezygisk/v1.0.0_515.md",
+          "size": 506334,
+          "checksum": "7904649b8dcaf2b060c3432df4fee302aeb1258da199d2b425335e82d49510e6",
+          "source": "release"
+        }
+      ]
+    },
+    {
+      "id": "tricky_store",
+      "name": "TEESimulator-RS",
+      "version": "v6.0.1-282",
+      "versionCode": 282,
+      "author": "JingMatrix, Enginex0",
+      "description": "Software simulation for Android hardware-backed key pairs with key attestation",
+      "added": 1786021258,
+      "minApi": 29,
+      "categories": [
+        "Integrity Tools"
+      ],
+      "icon": "https://avatars.githubusercontent.com/u/176248111?v=4",
+      "license": "GPL-3.0",
+      "readme": "https://raw.githubusercontent.com/Enginex0/TEESimulator-RS/main/README.md",
+      "verified": false,
+      "timestamp": 1783791356.0,
+      "size": 2765128,
+      "permissions": [
+        "magisk.permission.SERVICE",
+        "magisk.permission.SEPOLICY",
+        "magisk.permission.ACTION",
+        "mmrl.permission.DEXS"
+      ],
+      "features": {
+        "service": true,
+        "sepolicy": true,
+        "action": true
+      },
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1786021258,
+        "source": "https://github.com/Enginex0/TEESimulator-RS",
+        "antifeatures": null,
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/tricky_store/track.yaml"
+      },
+      "versions": [
+        {
+          "timestamp": 1786021270,
+          "version": "v6.0.1-282",
+          "versionCode": 282,
+          "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/tricky_store/v6.0.1-282_282.zip",
+          "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/tricky_store/v6.0.1-282_282.md",
+          "size": 2765128,
+          "checksum": "4cde854bdc6add7a3f587dae24d3cefff519206716b2d0dea7ff4c2772bb86ef",
+          "source": "release"
+        }
+      ]
+    },
+    {
+      "id": "zygisk_lsposed",
+      "name": "LSPosed",
+      "version": "v2.1.1 (7790)",
+      "versionCode": 7790,
+      "author": "LSPosed Developers",
+      "description": "Another enhanced implementation of Xposed Framework. Supports Android 9 ~ 17. Requires Zygisk enabled.",
+      "added": 1786021273,
+      "minApi": 27,
+      "categories": [
+        "Tools"
+      ],
+      "icon": "https://avatars.githubusercontent.com/u/75879071?s=200&v=4",
+      "license": "GPL-3.0",
+      "verified": true,
+      "timestamp": 1785585046.0,
+      "size": 5803220,
+      "permissions": [
+        "magisk.permission.SERVICE",
+        "magisk.permission.SEPOLICY",
+        "magisk.permission.ACTION",
+        "mmrl.permission.APKS",
+        "mmrl.permission.DEXS"
+      ],
+      "features": {
+        "service": true,
+        "sepolicy": true,
+        "action": true,
+        "apks": true
+      },
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1786021273,
+        "source": "https://lsposed.zip",
+        "antifeatures": null,
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/zygisk_lsposed/track.yaml"
+      },
+      "versions": [
+        {
+          "timestamp": 1786021274,
+          "version": "v2.1.1",
+          "versionCode": 7790,
+          "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/zygisk_lsposed/v2.1.1_7790.zip",
+          "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/zygisk_lsposed/v2.1.1_7790.md",
+          "size": 5803220,
+          "checksum": "f58eb92678e9d8b982de4987b249bfa8593f7c1524aff3be9976a5cb478d3263",
+          "source": "release"
+        }
+      ]
+    },
+    {
+      "id": "zygisk_vector",
+      "name": "Zygisk - LSPosed",
+      "version": "v1.11.0",
+      "versionCode": 7209,
+      "author": "JingMatrix & LSPosed Developers",
+      "description": "Another enhanced implementation of Xposed Framework. Supports Android 8.1 ~ 16. Requires Magisk 26.0+ and Zygisk enabled.",
+      "added": 1786021286,
+      "minApi": 27,
+      "categories": [
+        "Tools"
+      ],
+      "icon": "https://raw.githubusercontent.com/rahaaatul/stratos/master/assets/icons/vector_icon.png",
+      "license": "GPL-3.0",
+      "readme": "https://raw.githubusercontent.com/JingMatrix/Vector/master/README.md",
+      "verified": true,
+      "timestamp": 1785786393.1483178,
+      "size": 6785684,
+      "permissions": [
+        "magisk.permission.SERVICE",
+        "magisk.permission.RESETPROP",
+        "magisk.permission.SEPOLICY",
+        "magisk.permission.ACTION",
+        "mmrl.permission.APKS",
+        "mmrl.permission.DEXS"
+      ],
+      "features": {
+        "service": true,
+        "resetprop": true,
+        "sepolicy": true,
+        "action": true,
+        "apks": true
+      },
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1786021286,
+        "source": "https://github.com/JingMatrix/Vector",
+        "antifeatures": null,
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/zygisk_vector/track.yaml"
+      },
+      "versions": [
+        {
+          "timestamp": 1786021318,
+          "version": "v2.2",
+          "versionCode": 3082,
+          "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/zygisk_vector/v2.2_3082.zip",
+          "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/zygisk_vector/v2.2_3082.md",
+          "size": 9483092,
+          "checksum": "da5a038421542b5c3ff5099a0fb4e64e306f7ea35ee5a113f3956fac200dff26",
+          "source": "action"
+        },
+        {
+          "timestamp": 1786021318,
+          "version": "v1.11.0",
+          "versionCode": 7209,
+          "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/zygisk_vector/v1.11.0_7209.zip",
+          "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/zygisk_vector/v1.11.0_7209.md",
+          "size": 6785684,
+          "checksum": "6b8455e08dfa13a8121619fe013a79b40e3e5a1291555c91cc7ee1870a56b65c",
+          "source": "release"
+        }
+      ]
+    },
+    {
+      "id": "zygisksu",
+      "name": "NeoZygisk",
+      "version": "v2.3",
+      "versionCode": 275,
+      "author": "JingMatrix",
+      "description": "Zygote injection with ptrace.",
+      "added": 1786021319,
+      "minApi": 24,
+      "categories": [
+        "Tools"
+      ],
+      "icon": "https://avatars.githubusercontent.com/u/24476093?v=4",
+      "license": "GPL-3.0",
+      "readme": "https://raw.githubusercontent.com/JingMatrix/NeoZygisk/master/README.md",
+      "verified": false,
+      "timestamp": 1785766016.4434078,
+      "size": 3208704,
+      "permissions": [
+        "magisk.permission.SERVICE",
+        "magisk.permission.POST_FS_DATA",
+        "magisk.permission.SEPOLICY",
+        "magisk.permission.ACTION"
+      ],
+      "features": {
+        "service": true,
+        "post_fs_data": true,
+        "sepolicy": true,
+        "action": true
+      },
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1786021319,
+        "source": "https://github.com/JingMatrix/NeoZygisk",
+        "antifeatures": null,
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/zygisksu/track.yaml"
+      },
+      "versions": [
+        {
+          "timestamp": 1786021321,
+          "version": "v2.3",
+          "versionCode": 275,
+          "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/zygisksu/v2.3_275.zip",
+          "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/zygisksu/v2.3_275.md",
+          "size": 3208704,
+          "checksum": "5c84df9f962c04855b3523a3a75022cf5e4f3ad3dfd94794ed92b43e911f3b9a",
+          "source": "release"
+        }
+      ]
+    }
+  ]
+}

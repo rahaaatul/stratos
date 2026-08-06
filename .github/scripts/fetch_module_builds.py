@@ -31,7 +31,7 @@ from pathlib import Path
 import requests
 import yaml
 
-REPO_RAW = "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master"
+REPO_RAW = "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main"
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 MODULES_DIR = REPO_ROOT / "modules"
 CONFIG_FILE = REPO_ROOT / "modules.yaml"

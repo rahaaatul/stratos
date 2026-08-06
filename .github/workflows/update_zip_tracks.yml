@@ -2,7 +2,7 @@ name: Update tracks that use zip
 
 on:
   schedule:
-    - cron: '7 * * * *'
+    - cron: '7 */6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -19,18 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          fetch-depth: 0
-
-      - name: Backfill missing 'added' timestamps
-        run: |
-          set -euo pipefail
-          now=$(date +%s)
-          for f in modules/*/track.yaml; do
-            if ! grep -q "^added:" "$f"; then
-              echo "added: $now" >> "$f"
-              git add "$f"
-            fi
-          done
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v6

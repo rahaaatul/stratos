@@ -1,13 +1,13 @@
 {
   "id": "zygisk-detach",
-  "timestamp": 1786026107,
+  "timestamp": 1786045383,
   "versions": [
     {
-      "timestamp": 1786026107,
+      "timestamp": 1786045383,
       "version": "v1.23.2",
       "versionCode": 34,
-      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/zygisk-detach/v1.23.2_34.zip",
-      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/zygisk-detach/v1.23.2_34.md",
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisk-detach/v1.23.2_34.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisk-detach/v1.23.2_34.md",
       "size": 370351,
       "checksum": "a5a4b45a3bf89cbe3873ac260691f450a4a3f630d39f8959e0921e5f1f5c4ceb",
       "source": "release"

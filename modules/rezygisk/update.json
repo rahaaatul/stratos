@@ -1,13 +1,13 @@
 {
   "id": "rezygisk",
-  "timestamp": 1786026085,
+  "timestamp": 1786045380,
   "versions": [
     {
-      "timestamp": 1786026085,
+      "timestamp": 1786045380,
       "version": "v1.0.0",
       "versionCode": 515,
-      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/rezygisk/v1.0.0_515.zip",
-      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/rezygisk/v1.0.0_515.md",
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/rezygisk/v1.0.0_515.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/rezygisk/v1.0.0_515.md",
       "size": 724828,
       "checksum": "95d6ee49076f6aeabc865736a773f441ce4df8b8830b783c3d50d360e43f2796",
       "source": "release"

@@ -3,16 +3,18 @@
 fetch_module_builds.py — Stratos unified module build fetcher
 
 Rules:
-- Priority: Release(0) > Action(1) > Pre-release(2) for checksum/filename dedup
-- Naming: MMRL format {clean_version}_{versionCode}.zip (no prefixes, no renaming)
+- Priority: Release(0) > Pre-release(1) > Action(2) for checksum/filename dedup
+- Naming: MMRL format {clean_version}_{versionCode}.zip
 - Retention: per-source keep: is absolute cap, never exceeded
 - preserve: true on release guarantees >= 1 stable always retained
+- Fetch optimization: fetch only what's needed (newest to oldest), stop at keep count
+- Same-source filename collisions: error out with clear logging
 - Checksum verification every run (bandwidth not a concern)
 - update.json rebuilt from scratch every run (no ghosts possible)
+- track.yaml rebuilt from scratch every run (full rewrite, no partial updates)
 - Zips never modified, only read for module.prop
 - Raw URLs everywhere
 - Pattern matching: supports both regex and glob. No pattern = first .zip wins.
-- track.yaml auto-generated from modules.yaml + upstream metadata every run
 """
 
 import fnmatch
@@ -37,8 +39,8 @@ CONFIG_FILE = REPO_ROOT / "modules.yaml"
 GITHUB_TOKEN = os.environ.get("GH_TOKEN", "")
 ARTIFACT_PAT = os.environ.get("ARTIFACT_PAT", "")
 
-# Priority: Release > Action > Pre-release
-PRIORITY = {"release": 0, "action": 1, "pre-release": 2}
+# Priority: Release > Pre-release > Action
+PRIORITY = {"release": 0, "pre-release": 1, "action": 2}
 
 
 def get_repo_metadata(owner, repo, token):
@@ -63,8 +65,9 @@ def get_repo_metadata(owner, repo, token):
 
 def write_track_yaml(track_file, mod_cfg, metadata, last_update_ts):
     """Generate complete track.yaml from modules.yaml + upstream metadata.
+    Always overwrites from scratch — never appends. Called every run.
 
-    Always overwrites — never appends. Called every run.
+    Fields:
     - id, enable, verified, categories: from modules.yaml
     - license: modules.yaml override, else upstream
     - icon: modules.yaml override, else upstream owner avatar
@@ -72,13 +75,12 @@ def write_track_yaml(track_file, mod_cfg, metadata, last_update_ts):
     - source: hardcoded to Stratos repo
     - update_to: hardcoded to our update.json
     - added: when WE stored the zip (current time)
-    - last_update: upstream's release timestamp
+    - last_update: upstream's release timestamp (newest across retained)
     """
     mod_id = mod_cfg["id"]
     owner = mod_cfg.get("owner", "")
     repo = mod_cfg.get("repo", "")
 
-    # Auto-derive fields if not provided in modules.yaml
     license_val = mod_cfg.get("license", "") or metadata.get("license", "")
     icon_val = mod_cfg.get("icon", "") or metadata.get("owner_avatar", "")
     default_branch = metadata.get("default_branch", "main")
@@ -105,9 +107,8 @@ def write_track_yaml(track_file, mod_cfg, metadata, last_update_ts):
     if readme_url:
         lines.append(f"readme: {readme_url}")
 
-    # Hardcoded values
     lines.extend([
-        f"source: https://github.com/rahaaatul/stratos",
+        "source: https://github.com/rahaaatul/stratos",
         f"update_to: {REPO_RAW}/modules/{mod_id}/update.json",
         f"added: {int(time.time())}",
     ])
@@ -202,11 +203,13 @@ def gh_headers(token):
     return h
 
 
-def fetch_releases(owner, repo, pattern, want_pre, token):
+def fetch_releases(owner, repo, pattern, want_pre, token, max_candidates):
     """Fetch release assets filtered by pattern. prerelease flag controls type.
-    If no pattern provided, defaults to first .zip found.
-    Captures published_at from upstream for last_update."""
-    url = f"https://api.github.com/repos/{owner}/{repo}/releases?per_page=30"
+    Fetches newest to oldest (GitHub API default), stops at max_candidates.
+    If no pattern provided, defaults to first .zip found."""
+    # Fetch slightly more than needed to allow for dedup buffer
+    per_page = max(max_candidates * 3, 5)
+    url = f"https://api.github.com/repos/{owner}/{repo}/releases?per_page={per_page}"
     headers = gh_headers(token)
     cands = []
     try:
@@ -246,19 +249,25 @@ def fetch_releases(owner, repo, pattern, want_pre, token):
                 "use_headers": headers,
                 "upstream_ts": upstream_ts,
             })
+            # If no pattern, take only first .zip per release
             if not pattern:
                 break
-        if not pattern and cands:
+
+        # Stop once we have enough candidates
+        if len(cands) >= max_candidates * 2:
             break
+
     return cands
 
 
-def fetch_actions(owner, repo, workflow_file, pattern, token):
+def fetch_actions(owner, repo, workflow_file, pattern, token, max_candidates):
     """Fetch artifacts from successful runs of a specific workflow.
-    Captures run created_at as upstream timestamp."""
+    Fetches newest to oldest, stops at max_candidates.
+    If no pattern provided, defaults to first artifact found."""
+    per_page = max(max_candidates * 3, 5)
     headers = gh_headers(token)
     url = (f"https://api.github.com/repos/{owner}/{repo}"
-           f"/actions/workflows/{workflow_file}/runs?status=success&per_page=15")
+           f"/actions/workflows/{workflow_file}/runs?status=success&per_page={per_page}")
     cands = []
     try:
         resp = requests.get(url, headers=headers, timeout=30)
@@ -303,10 +312,14 @@ def fetch_actions(owner, repo, workflow_file, pattern, token):
                 "use_headers": headers,
                 "upstream_ts": upstream_ts,
             })
+            # If no pattern, take only first artifact per run
             if not pattern:
                 break
-        if not pattern and cands:
+
+        # Stop once we have enough candidates
+        if len(cands) >= max_candidates * 2:
             break
+
     return cands
 
 
@@ -356,16 +369,18 @@ def process_module(mod_cfg, gh_headers, pat_headers):
         owner = rel_cfg.get("owner", mod_owner)
         repo = rel_cfg.get("repo", mod_repo)
         pattern = rel_cfg.get("pattern", "")
-        print(f"  checking release: {owner}/{repo}")
-        candidates.extend(fetch_releases(owner, repo, pattern, False, GITHUB_TOKEN))
+        keep = rel_cfg.get("keep", 1)
+        print(f"  checking release: {owner}/{repo} (keep={keep})")
+        candidates.extend(fetch_releases(owner, repo, pattern, False, GITHUB_TOKEN, keep))
 
     # 3. Pre-release source (prerelease=true ONLY)
     if pre_cfg.get("enabled"):
         owner = pre_cfg.get("owner", mod_owner)
         repo = pre_cfg.get("repo", mod_repo)
         pattern = pre_cfg.get("pattern", "")
-        print(f"  checking prerelease: {owner}/{repo}")
-        candidates.extend(fetch_releases(owner, repo, pattern, True, GITHUB_TOKEN))
+        keep = pre_cfg.get("keep", 1)
+        print(f"  checking prerelease: {owner}/{repo} (keep={keep})")
+        candidates.extend(fetch_releases(owner, repo, pattern, True, GITHUB_TOKEN, keep))
 
     # 4. Actions source
     if act_cfg.get("enabled"):
@@ -373,9 +388,10 @@ def process_module(mod_cfg, gh_headers, pat_headers):
         repo = act_cfg.get("repo", mod_repo)
         wf = act_cfg.get("workflow_file", "")
         pattern = act_cfg.get("pattern", "")
-        print(f"  checking actions: {owner}/{repo} [{wf}]")
+        keep = act_cfg.get("keep", 1)
+        print(f"  checking actions: {owner}/{repo} [{wf}] (keep={keep})")
         candidates.extend(fetch_actions(
-            owner, repo, wf, pattern, ARTIFACT_PAT or GITHUB_TOKEN
+            owner, repo, wf, pattern, ARTIFACT_PAT or GITHUB_TOKEN, keep
         ))
 
     if not candidates:
@@ -426,7 +442,7 @@ def process_module(mod_cfg, gh_headers, pat_headers):
             print("  removed stale update.json")
         return
 
-    # Dedup by checksum: Release(0) > Action(1) > Pre-release(2)
+    # Dedup by checksum: Release(0) > Pre-release(1) > Action(2)
     by_cs = {}
     for c in verified:
         by_cs.setdefault(c["checksum"], []).append(c)
@@ -441,9 +457,10 @@ def process_module(mod_cfg, gh_headers, pat_headers):
                 Path(loser["local_path"]).unlink()
         deduped.append(winner)
 
-    # Dedup by MMRL filename (different checksums, same versionCode)
+    # Dedup by MMRL filename — ERROR on same-source collisions
     by_fn = {}
     finalists = []
+    errors = []
     for c in sorted(deduped, key=lambda x: PRIORITY.get(x["source"], 9)):
         fn = c["zip_name"]
         if fn not in by_fn:
@@ -451,9 +468,27 @@ def process_module(mod_cfg, gh_headers, pat_headers):
             finalists.append(c)
         else:
             existing = by_fn[fn]
-            print(f"  [dedup] filename collision {fn}, keeping {existing['source']} over {c['source']}")
-            if c.get("local_path") and Path(c["local_path"]).exists():
-                Path(c["local_path"]).unlink()
+            if existing["source"] == c["source"]:
+                # SAME source collision — this is a PATTERN ERROR
+                errors.append(
+                    f"  [ERROR] same-source filename collision: {fn}\n"
+                    f"    kept:     {existing['checksum'][:16]}... from {existing.get('download_url', '?')}\n"
+                    f"    discarded: {c['checksum'][:16]}... from {c.get('download_url', '?')}\n"
+                    f"    → Pattern is too broad — narrowing required"
+                )
+                # Keep the one with higher priority (already sorted), discard the other
+                if c.get("local_path") and Path(c["local_path"]).exists():
+                    Path(c["local_path"]).unlink()
+            else:
+                # Different source — normal dedup, log and keep higher priority
+                print(f"  [dedup] cross-source collision {fn}, keeping {existing['source']} over {c['source']}")
+                if c.get("local_path") and Path(c["local_path"]).exists():
+                    Path(c["local_path"]).unlink()
+
+    # Print all errors
+    if errors:
+        for err in errors:
+            print(err)
 
     # Split into pools
     rel_pool = sorted(
@@ -557,7 +592,7 @@ def process_module(mod_cfg, gh_headers, pat_headers):
             print(f"  [orphan] removing {f.name}")
             f.unlink()
 
-    # Generate complete track.yaml from modules.yaml + upstream metadata
+    # Rebuild track.yaml from scratch
     track_file = mod_dir / "track.yaml"
     write_track_yaml(track_file, mod_cfg, metadata, last_update_ts)
 

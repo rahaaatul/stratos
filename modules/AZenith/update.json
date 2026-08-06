@@ -1,0 +1,16 @@
+{
+  "id": "AZenith",
+  "timestamp": 1786026056,
+  "versions": [
+    {
+      "timestamp": 1786026056,
+      "version": "2.8",
+      "versionCode": 2864,
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/AZenith/2.8_2864.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/AZenith/2.8_2864.md",
+      "size": 1635726,
+      "checksum": "c17b96e5d5228f160be6a5425b43e3042333da47b25db6206afd8615772b32e7",
+      "source": "release"
+    }
+  ]
+}

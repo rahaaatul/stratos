@@ -1,0 +1,14 @@
+id: Frosty
+enable: true
+verified: false
+categories:
+  - Performance
+  - System
+  - WebUI
+license: GPL-3.0
+icon: https://avatars.githubusercontent.com/u/101467921?v=4
+readme: https://raw.githubusercontent.com/Drsexo/Frosty/main/README.md
+source: https://github.com/rahaaatul/stratos
+update_to: https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/Frosty/update.json
+added: 1786026063
+last_update: 1783198619

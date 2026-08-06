@@ -1,0 +1,14 @@
+id: playintegrity
+enable: true
+verified: false
+categories:
+  - Integrity
+  - Tools
+  - WebUI
+license: GPL-3.0
+icon: https://avatars.githubusercontent.com/u/121730102?v=4
+readme: https://raw.githubusercontent.com/MeowDump/Integrity-Box/main/README.md
+source: https://github.com/rahaaatul/stratos
+update_to: https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/playintegrity/update.json
+added: 1786026080
+last_update: 1785947226

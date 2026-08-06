@@ -1,0 +1,13 @@
+id: rezygisk
+enable: true
+verified: false
+categories:
+  - Tools
+  - WebUI
+license: GPL-3.0
+icon: https://avatars.githubusercontent.com/u/120441268?v=4
+readme: https://raw.githubusercontent.com/PerformanC/ReZygisk/main/README.md
+source: https://github.com/rahaaatul/stratos
+update_to: https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/rezygisk/update.json
+added: 1786026085
+last_update: 1778454538

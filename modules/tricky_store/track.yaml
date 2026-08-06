@@ -1,0 +1,13 @@
+id: tricky_store
+enable: true
+verified: false
+categories:
+  - Integrity
+  - Tools
+license: GPL-3.0
+icon: https://avatars.githubusercontent.com/u/176248111?v=4
+readme: https://raw.githubusercontent.com/Enginex0/TEESimulator-RS/main/README.md
+source: https://github.com/rahaaatul/stratos
+update_to: https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/tricky_store/update.json
+added: 1786026105
+last_update: 1781884487

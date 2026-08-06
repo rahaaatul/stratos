@@ -1,0 +1,16 @@
+{
+  "id": "Frosty",
+  "timestamp": 1786026063,
+  "versions": [
+    {
+      "timestamp": 1786026063,
+      "version": "4.3",
+      "versionCode": 43,
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/Frosty/4.3_43.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/Frosty/4.3_43.md",
+      "size": 321321,
+      "checksum": "fbfb7c324bdeb72254173c3ef47aca47eed36092d8d60d630951d59234ccb9a7",
+      "source": "release"
+    }
+  ]
+}

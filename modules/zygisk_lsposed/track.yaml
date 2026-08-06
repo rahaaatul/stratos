@@ -1,0 +1,8 @@
+id: zygisk_lsposed
+enable: true
+verified: true
+categories:
+  - Tools
+source: https://github.com/rahaaatul/stratos
+update_to: https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/zygisk_lsposed/update.json
+added: 1786026111

@@ -1,0 +1,26 @@
+{
+  "id": "playintegrity",
+  "timestamp": 1786026080,
+  "versions": [
+    {
+      "timestamp": 1786026080,
+      "version": "\u00dfeta",
+      "versionCode": 39100,
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/playintegrity/\u00dfeta_39100.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/playintegrity/\u00dfeta_39100.md",
+      "size": 584648,
+      "checksum": "39c0b4885c02e71a1578d1cd6776b6e134cffebfaed5ad94c78625febf235435",
+      "source": "pre-release"
+    },
+    {
+      "timestamp": 1786026080,
+      "version": "v40",
+      "versionCode": 40000,
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/playintegrity/v40_40000.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/playintegrity/v40_40000.md",
+      "size": 660542,
+      "checksum": "c4cc803e08df50f8e70a5b94ecf2756aab424f3a8e7405532a0b6f64e649deaf",
+      "source": "release"
+    }
+  ]
+}

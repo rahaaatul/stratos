@@ -1,0 +1,12 @@
+id: zygisk_vector
+enable: true
+verified: true
+categories:
+  - Tools
+license: GPL-3.0
+icon: https://avatars.githubusercontent.com/u/24476093?v=4
+readme: https://raw.githubusercontent.com/JingMatrix/Vector/master/README.md
+source: https://github.com/rahaaatul/stratos
+update_to: https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/master/modules/zygisk_vector/update.json
+added: 1786026124
+last_update: 1786020814

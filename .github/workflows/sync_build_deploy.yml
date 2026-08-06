@@ -1,23 +1,19 @@
 name: sync-build-deploy
-on:
-  schedule:
-    - cron: '0 00/6 * * *'
 
+on:
   workflow_dispatch:
-   inputs:
+    inputs:
       run_sync:
         description: "Run Sync"
         type: choice
         required: true
         default: 'No'
         options:
-         - 'Yes'
-         - 'No'
+          - 'Yes'
+          - 'No'
 
 permissions:
   contents: write
-  issues: write
-  pull-requests: write
   pages: write
   id-token: write
 
@@ -26,7 +22,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  IS_SYNC: ${{ inputs.run_sync == 'Yes' || github.event_name == 'schedule' }}
+  IS_SYNC: ${{ inputs.run_sync == 'Yes' }}
 
 jobs:
   sync:
@@ -52,73 +48,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install mmrl-util
 
-      - name: Sync
+      - name: Build index
         if: ${{ env.IS_SYNC == 'true' }}
         run: |
-          mmrl-util sync --diff versions_diff.md
-
-      - name: Write versions diff to summary
-        if: ${{ env.IS_SYNC == 'true' }}
-        run: |
-          if [ -f versions_diff.md ]; then
-            echo "## Versions Diff" >> $GITHUB_STEP_SUMMARY
-            echo "$(cat versions_diff.md)" >> $GITHUB_STEP_SUMMARY
-            rm versions_diff.md
-          fi
+          mmrl-util index
 
       - name: Write latest versions to summary
-        if: ${{ env.IS_SYNC != 'true' }}
         run: |
           mmrl-util index --list > latest_versions.md
           echo "## Latest Versions" >> $GITHUB_STEP_SUMMARY
           echo "$(cat latest_versions.md)" >> $GITHUB_STEP_SUMMARY
           rm latest_versions.md
-
-      - name: Build index (no push)
-        if: ${{ env.IS_SYNC == 'true' }}
-        run: |
-          mmrl-util index
-
-      - name: Clean up cosmetic version strings in modules.json
-        if: ${{ env.IS_SYNC == 'true' }}
-        run: |
-          python3 - <<'PYEOF'
-          import json
-          import re
-
-          path = "json/modules.json"
-          with open(path) as f:
-              data = json.load(f)
-
-          mods = data.get("modules", data) if isinstance(data, dict) else data
-
-          # Strip the whole "(NNNN-hash-suffix)" parenthetical, matching
-          # the bare style every other module (zygisk-detach etc.) uses.
-          # MMRL appends "(versionCode)" itself when rendering -- keeping
-          # our own parenthetical caused a double "(3073) (3073)" display.
-          TARGET_IDS = {"zygisk_vector", "zygisksu"}
-
-          def clean(v):
-              return re.sub(r"\s*\([^)]*\)", "", v)
-
-          for m in mods:
-              if m.get("id") not in TARGET_IDS:
-                  continue
-              if m.get("version"):
-                  cleaned = clean(m["version"])
-                  if cleaned != m["version"]:
-                      print(f"{m.get('id')} summary: '{m['version']}' -> '{cleaned}'")
-                      m["version"] = cleaned
-              for v in m.get("versions", []):
-                  if v.get("version"):
-                      cleaned = clean(v["version"])
-                      if cleaned != v["version"]:
-                          print(f"{m.get('id')} history entry: '{v['version']}' -> '{cleaned}'")
-                          v["version"] = cleaned
-
-          with open(path, "w") as f:
-              json.dump(data, f, indent=2)
-          PYEOF
 
       - name: Commit and push index
         if: ${{ env.IS_SYNC == 'true' }}

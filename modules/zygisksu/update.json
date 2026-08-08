@@ -1,9 +1,9 @@
 {
   "id": "zygisksu",
-  "timestamp": 1786194415,
+  "timestamp": 1786215131,
   "versions": [
     {
-      "timestamp": 1786194415,
+      "timestamp": 1786215131,
       "version": "v2.3",
       "versionCode": 275,
       "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.3_275.zip",
@@ -13,23 +13,23 @@
       "source": "release"
     },
     {
-      "timestamp": 1786194415,
+      "timestamp": 1786215131,
       "version": "v2.3",
-      "versionCode": 287,
-      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.3_287.zip",
-      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.3_287.md",
-      "size": 2420728,
-      "checksum": "f3bb8f5296544cf97a8e15604a94157b6f3869c46429f4648521ea4e09071d76",
+      "versionCode": 296,
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.3_296.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.3_296.md",
+      "size": 2445469,
+      "checksum": "c8404181987372a3197d0e10f03f6944d3f13b11d71cb617c09d90849538e30e",
       "source": "action"
     },
     {
-      "timestamp": 1786194415,
+      "timestamp": 1786215131,
       "version": "v2.3",
-      "versionCode": 288,
-      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.3_288.zip",
-      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.3_288.md",
-      "size": 2420497,
-      "checksum": "874414bcedd100f33f268b43a83c849975c1a6afcf3088e25b40444a333b4dc3",
+      "versionCode": 297,
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.3_297.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.3_297.md",
+      "size": 2445697,
+      "checksum": "be3c225aefc78ff56789b278caf3987b20d9043abe7b6cf9aa7cb1e0e053d777",
       "source": "action"
     }
   ]

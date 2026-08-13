@@ -1,15 +1,15 @@
 {
   "id": "StylizeText",
-  "timestamp": 1786607226,
+  "timestamp": 1786628269,
   "versions": [
     {
-      "timestamp": 1786607226,
-      "version": "v7.4",
-      "versionCode": 20,
-      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/StylizeText/v7.4_20.zip",
-      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/StylizeText/v7.4_20.md",
-      "size": 2532167,
-      "checksum": "e325a209d3054391370ae6fa9673ee52787cf4f79059c73275033de8ea04d07a",
+      "timestamp": 1786628269,
+      "version": "v7.5",
+      "versionCode": 21,
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/StylizeText/v7.5_21.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/StylizeText/v7.5_21.md",
+      "size": 2535838,
+      "checksum": "432550439eb632e824ccea5a92cf9f84ebd82422eed746fe7b979ff1db92cf67",
       "source": "release"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "id": "playintegrity",
-  "timestamp": 1786845164,
+  "timestamp": 1786863246,
   "versions": [
     {
-      "timestamp": 1786845164,
+      "timestamp": 1786863246,
       "version": "\u00dfeta",
       "versionCode": 39100,
       "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/playintegrity/\u00dfeta_39100.zip",
@@ -13,7 +13,7 @@
       "source": "pre-release"
     },
     {
-      "timestamp": 1786845164,
+      "timestamp": 1786863246,
       "version": "v40",
       "versionCode": 40000,
       "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/playintegrity/v40_40000.zip",

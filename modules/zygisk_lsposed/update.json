@@ -1,9 +1,9 @@
 {
   "id": "zygisk_lsposed",
-  "timestamp": 1786992767,
+  "timestamp": 1787017530,
   "versions": [
     {
-      "timestamp": 1786992767,
+      "timestamp": 1787017530,
       "version": "v2.1.1",
       "versionCode": 7790,
       "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisk_lsposed/v2.1.1_7790.zip",

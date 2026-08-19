@@ -1,15 +1,15 @@
 {
   "id": "AZenith",
-  "timestamp": 1787144589,
+  "timestamp": 1787165292,
   "versions": [
     {
-      "timestamp": 1787144589,
-      "version": "5.1",
-      "versionCode": 1735,
-      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/AZenith/5.1_1735.zip",
-      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/AZenith/5.1_1735.md",
-      "size": 11286325,
-      "checksum": "6876938c3f21f4f7a40d17d4ac7744c500fb2ffdf614e30f76928060ec25266b",
+      "timestamp": 1787165292,
+      "version": "5.2",
+      "versionCode": 1823,
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/AZenith/5.2_1823.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/AZenith/5.2_1823.md",
+      "size": 10510086,
+      "checksum": "e81d52e6ff4b34f9bb6515f950065da838b073f60f260797476622e5370150a4",
       "source": "release"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "id": "zygisksu",
-  "timestamp": 1788347374,
+  "timestamp": 1788366586,
   "versions": [
     {
-      "timestamp": 1788347374,
+      "timestamp": 1788366586,
       "version": "v2.4",
       "versionCode": 289,
       "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_289.zip",
@@ -13,23 +13,13 @@
       "source": "release"
     },
     {
-      "timestamp": 1788347374,
+      "timestamp": 1788366586,
       "version": "v2.4",
-      "versionCode": 293,
-      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_293.zip",
-      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_293.md",
-      "size": 2437962,
-      "checksum": "3f473fce7e178ed3950fbfa8ba403e7a3f95fdb66adb65ae9df5b2baf3f7554f",
-      "source": "action"
-    },
-    {
-      "timestamp": 1788347374,
-      "version": "v2.4",
-      "versionCode": 303,
-      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_303.zip",
-      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_303.md",
-      "size": 2453923,
-      "checksum": "d26b8c09473f37bf7a76d9b1e703eca27e8eda81cfc6bbae25fc3a7eb9941e1b",
+      "versionCode": 290,
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_290.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_290.md",
+      "size": 2429546,
+      "checksum": "375980a63ce72ebce290e309806a52a012e2f01153f5aee4219a33a5cb1aed57",
       "source": "action"
     }
   ]

@@ -1,15 +1,15 @@
 {
   "id": "Frosty",
-  "timestamp": 1788408769,
+  "timestamp": 1788433557,
   "versions": [
     {
-      "timestamp": 1788408769,
-      "version": "4.3",
-      "versionCode": 43,
-      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/Frosty/4.3_43.zip",
-      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/Frosty/4.3_43.md",
-      "size": 321321,
-      "checksum": "fbfb7c324bdeb72254173c3ef47aca47eed36092d8d60d630951d59234ccb9a7",
+      "timestamp": 1788433557,
+      "version": "4.4",
+      "versionCode": 44,
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/Frosty/4.4_44.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/Frosty/4.4_44.md",
+      "size": 347878,
+      "checksum": "1cf644a102a87577c59642f0b793a3dfb211cae32f64ea82484f90f0c88b4160",
       "source": "release"
     }
   ]

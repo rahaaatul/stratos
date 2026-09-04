@@ -1,9 +1,9 @@
 {
   "id": "zygisk_vector",
-  "timestamp": 1788520082,
+  "timestamp": 1788538550,
   "versions": [
     {
-      "timestamp": 1788520082,
+      "timestamp": 1788538550,
       "version": "v2.2",
       "versionCode": 3109,
       "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisk_vector/v2.2_3109.zip",
@@ -13,13 +13,13 @@
       "source": "action"
     },
     {
-      "timestamp": 1788520082,
+      "timestamp": 1788538550,
       "version": "v2.2",
       "versionCode": 3110,
       "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisk_vector/v2.2_3110.zip",
       "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisk_vector/v2.2_3110.md",
-      "size": 9561668,
-      "checksum": "ccd2cce8013b52d7be30120a4d163aa95cfc9265cc3d3c24f1086717b640219e",
+      "size": 9559515,
+      "checksum": "1aef9805d4bf927f8b5f38dfd77b97a9369b77e1ede3f644ce6c7e82a29710d2",
       "source": "action"
     }
   ]

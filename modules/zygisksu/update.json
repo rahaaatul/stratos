@@ -1,9 +1,9 @@
 {
   "id": "zygisksu",
-  "timestamp": 1788620679,
+  "timestamp": 1788639345,
   "versions": [
     {
-      "timestamp": 1788620679,
+      "timestamp": 1788639345,
       "version": "v2.4",
       "versionCode": 289,
       "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_289.zip",
@@ -13,7 +13,7 @@
       "source": "release"
     },
     {
-      "timestamp": 1788620679,
+      "timestamp": 1788639345,
       "version": "v2.4",
       "versionCode": 294,
       "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_294.zip",
@@ -23,7 +23,7 @@
       "source": "action"
     },
     {
-      "timestamp": 1788620679,
+      "timestamp": 1788639345,
       "version": "v2.4",
       "versionCode": 295,
       "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_295.zip",

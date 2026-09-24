@@ -1,9 +1,19 @@
 {
   "id": "zygisksu",
-  "timestamp": 1790224515,
+  "timestamp": 1790249799,
   "versions": [
     {
-      "timestamp": 1790224515,
+      "timestamp": 1790249799,
+      "version": "v2.3",
+      "versionCode": 288,
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.3_288.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.3_288.md",
+      "size": 2430340,
+      "checksum": "b7c0327626c27b4dabb48d542396c1d68b3f5ecc636684c78102b4c25b1f6221",
+      "source": "action"
+    },
+    {
+      "timestamp": 1790249799,
       "version": "v2.4",
       "versionCode": 289,
       "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_289.zip",
@@ -13,23 +23,13 @@
       "source": "release"
     },
     {
-      "timestamp": 1790224515,
+      "timestamp": 1790249799,
       "version": "v2.4",
-      "versionCode": 294,
-      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_294.zip",
-      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_294.md",
-      "size": 2448537,
-      "checksum": "879d627ef5954cf73623e47497f750e4ea2b4e9d3a65df5b7bcc1fa0567877cc",
-      "source": "action"
-    },
-    {
-      "timestamp": 1790224515,
-      "version": "v2.4",
-      "versionCode": 295,
-      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_295.zip",
-      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_295.md",
-      "size": 2448549,
-      "checksum": "bd6b809c049bef32257aaf81cadc816ebabe874bcf3590e93cdbd898de5ef487",
+      "versionCode": 291,
+      "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_291.zip",
+      "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_291.md",
+      "size": 2430447,
+      "checksum": "d98152c30805994d1385e8923f8cc0215ef50e43cffed5c58541f43a0a817c1a",
       "source": "action"
     }
   ]

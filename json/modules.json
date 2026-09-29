@@ -9,7 +9,7 @@
   "description": "Curated modules for Magisk",
   "metadata": {
     "version": 1,
-    "timestamp": 1790685666.513369
+    "timestamp": 1790719843.276018
   },
   "modules": [
     {
@@ -19,7 +19,7 @@
       "versionCode": 1823,
       "author": "ArchHaven Developers",
       "description": "One, Two, Three! AZenith has arrived!",
-      "added": 1790685624,
+      "added": 1790719804,
       "categories": [
         "Performance",
         "System"
@@ -44,14 +44,14 @@
       },
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1790685624,
+        "added": 1790719804,
         "source": "https://github.com/rahaaatul/stratos",
         "antifeatures": null,
         "build_metadata": "https://rahaaatul.github.io/stratos/modules/AZenith/track.yaml"
       },
       "versions": [
         {
-          "timestamp": 1790685624,
+          "timestamp": 1790719804,
           "version": "5.2",
           "versionCode": 1823,
           "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/AZenith/5.2_1823.zip",
@@ -69,7 +69,7 @@
       "versionCode": 44,
       "author": "DrSexo",
       "description": "Maximum battery saving and GMS optimization. Freeze GMS services, enable doze, nuke logs, apply kernel tweaks. Use WebUI button to edit settings.",
-      "added": 1790685625,
+      "added": 1790719805,
       "categories": [
         "Performance",
         "System",
@@ -96,14 +96,14 @@
       },
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1790685625,
+        "added": 1790719805,
         "source": "https://github.com/rahaaatul/stratos",
         "antifeatures": null,
         "build_metadata": "https://rahaaatul.github.io/stratos/modules/Frosty/track.yaml"
       },
       "versions": [
         {
-          "timestamp": 1790685625,
+          "timestamp": 1790719805,
           "version": "4.4",
           "versionCode": 44,
           "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/Frosty/4.4_44.zip",
@@ -121,7 +121,7 @@
       "versionCode": 21,
       "author": "AshBorn (@Ripper_Hybrid)",
       "description": "Stylish fonts & emojis for a personalized experience.",
-      "added": 1790685627,
+      "added": 1790719806,
       "categories": [
         "Theme",
         "Font",
@@ -146,14 +146,14 @@
       },
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1790685627,
+        "added": 1790719806,
         "source": "https://github.com/rahaaatul/stratos",
         "antifeatures": null,
         "build_metadata": "https://rahaaatul.github.io/stratos/modules/StylizeText/track.yaml"
       },
       "versions": [
         {
-          "timestamp": 1790685627,
+          "timestamp": 1790719806,
           "version": "v7.5",
           "versionCode": 21,
           "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/StylizeText/v7.5_21.zip",
@@ -170,7 +170,7 @@
       "version": "v43",
       "versionCode": 43000,
       "description": "Waiting for reboot",
-      "added": 1790685630,
+      "added": 1790719808,
       "categories": [
         "Integrity",
         "Tools",
@@ -201,14 +201,14 @@
       },
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1790685630,
+        "added": 1790719808,
         "source": "https://github.com/rahaaatul/stratos",
         "antifeatures": null,
         "build_metadata": "https://rahaaatul.github.io/stratos/modules/playintegrity/track.yaml"
       },
       "versions": [
         {
-          "timestamp": 1790685630,
+          "timestamp": 1790719808,
           "version": "v43",
           "versionCode": 43000,
           "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/playintegrity/v43_43000.zip",
@@ -226,7 +226,7 @@
       "versionCode": 515,
       "author": "The PerformanC Organization",
       "description": "Standalone implementation of Zygisk.",
-      "added": 1790685631,
+      "added": 1790719809,
       "categories": [
         "Tools",
         "WebUI"
@@ -251,14 +251,14 @@
       },
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1790685631,
+        "added": 1790719809,
         "source": "https://github.com/rahaaatul/stratos",
         "antifeatures": null,
         "build_metadata": "https://rahaaatul.github.io/stratos/modules/rezygisk/track.yaml"
       },
       "versions": [
         {
-          "timestamp": 1790685631,
+          "timestamp": 1790719809,
           "version": "v1.0.0",
           "versionCode": 515,
           "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/rezygisk/v1.0.0_515.zip",
@@ -276,7 +276,7 @@
       "versionCode": 282,
       "author": "JingMatrix, Enginex0",
       "description": "Software simulation for Android hardware-backed key pairs with key attestation",
-      "added": 1790685633,
+      "added": 1790719810,
       "categories": [
         "Integrity",
         "Tools"
@@ -301,14 +301,14 @@
       },
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1790685633,
+        "added": 1790719810,
         "source": "https://github.com/rahaaatul/stratos",
         "antifeatures": null,
         "build_metadata": "https://rahaaatul.github.io/stratos/modules/tricky_store/track.yaml"
       },
       "versions": [
         {
-          "timestamp": 1790685633,
+          "timestamp": 1790719810,
           "version": "v6.0.1-282",
           "versionCode": 282,
           "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/tricky_store/v6.0.1-282_282.zip",
@@ -326,7 +326,7 @@
       "versionCode": 35,
       "author": "j-hc",
       "description": "Detaches installed apps from Play Store",
-      "added": 1790685634,
+      "added": 1790719811,
       "categories": [
         "Tools"
       ],
@@ -348,14 +348,14 @@
       },
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1790685634,
+        "added": 1790719811,
         "source": "https://github.com/rahaaatul/stratos",
         "antifeatures": null,
         "build_metadata": "https://rahaaatul.github.io/stratos/modules/zygisk-detach/track.yaml"
       },
       "versions": [
         {
-          "timestamp": 1790685634,
+          "timestamp": 1790719811,
           "version": "v1.24.0",
           "versionCode": 35,
           "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisk-detach/v1.24.0_35.zip",
@@ -373,7 +373,7 @@
       "versionCode": 7854,
       "author": "LSPosed Developers",
       "description": "Another enhanced implementation of Xposed Framework. Supports Android 9 ~ 17. Requires Zygisk enabled.",
-      "added": 1790685638,
+      "added": 1790719815,
       "categories": [
         "Tools"
       ],
@@ -394,14 +394,14 @@
       },
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1790685638,
+        "added": 1790719815,
         "source": "https://github.com/rahaaatul/stratos",
         "antifeatures": null,
         "build_metadata": "https://rahaaatul.github.io/stratos/modules/zygisk_lsposed/track.yaml"
       },
       "versions": [
         {
-          "timestamp": 1790685638,
+          "timestamp": 1790719815,
           "version": "v2.2.0",
           "versionCode": 7854,
           "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisk_lsposed/v2.2.0_7854.zip",
@@ -413,13 +413,65 @@
       ]
     },
     {
+      "id": "zygisk_vector",
+      "name": "Vector",
+      "version": "v2.2 (3111-0230b11a-JingMatrix-Vector)",
+      "versionCode": 3111,
+      "author": "JingMatrix",
+      "description": "A modern, Xposed-compatible framework for Android application hooking. (Android 8.1 ~ 17)",
+      "added": 1790719819,
+      "categories": [
+        "Tools"
+      ],
+      "icon": "https://avatars.githubusercontent.com/u/24476093?v=4",
+      "license": "GPL-3.0",
+      "readme": "https://raw.githubusercontent.com/JingMatrix/Vector/master/README.md",
+      "verified": true,
+      "timestamp": 1789351042,
+      "size": 9579136,
+      "permissions": [
+        "magisk.permission.SERVICE",
+        "magisk.permission.RESETPROP",
+        "magisk.permission.SEPOLICY",
+        "magisk.permission.ACTION",
+        "mmrl.permission.APKS",
+        "mmrl.permission.DEXS"
+      ],
+      "features": {
+        "service": true,
+        "resetprop": true,
+        "sepolicy": true,
+        "action": true,
+        "apks": true
+      },
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1790719819,
+        "source": "https://github.com/rahaaatul/stratos",
+        "antifeatures": null,
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/zygisk_vector/track.yaml"
+      },
+      "versions": [
+        {
+          "timestamp": 1790719819,
+          "version": "v2.2",
+          "versionCode": 3111,
+          "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisk_vector/v2.2_3111.zip",
+          "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisk_vector/v2.2_3111.md",
+          "size": 9579136,
+          "checksum": "3d3704e27c912aee4b028b0b88a6ca2c39599387c994b3724d1008ad0bfe77b8",
+          "source": "action"
+        }
+      ]
+    },
+    {
       "id": "zygisksu",
       "name": "NeoZygisk",
-      "version": "v2.4 (289-08080ef-release)",
-      "versionCode": 289,
+      "version": "v2.4 (295-8578794-release)",
+      "versionCode": 295,
       "author": "JingMatrix",
       "description": "Zygote injection with ptrace.",
-      "added": 1790685645,
+      "added": 1790719823,
       "categories": [
         "Tools"
       ],
@@ -427,8 +479,8 @@
       "license": "GPL-3.0",
       "readme": "https://raw.githubusercontent.com/JingMatrix/NeoZygisk/master/README.md",
       "verified": false,
-      "timestamp": 1786215827,
-      "size": 2401208,
+      "timestamp": 1788449460,
+      "size": 2448549,
       "permissions": [
         "magisk.permission.SERVICE",
         "magisk.permission.POST_FS_DATA",
@@ -443,14 +495,14 @@
       },
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1790685645,
+        "added": 1790719823,
         "source": "https://github.com/rahaaatul/stratos",
         "antifeatures": null,
         "build_metadata": "https://rahaaatul.github.io/stratos/modules/zygisksu/track.yaml"
       },
       "versions": [
         {
-          "timestamp": 1790685645,
+          "timestamp": 1790719823,
           "version": "v2.4",
           "versionCode": 289,
           "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_289.zip",
@@ -458,6 +510,26 @@
           "size": 2401208,
           "checksum": "93a1425c67bb89f58a0dcb9fc823ec93f6472214f221e667a70b67c6a6e061a1",
           "source": "release"
+        },
+        {
+          "timestamp": 1790719823,
+          "version": "v2.4",
+          "versionCode": 294,
+          "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_294.zip",
+          "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_294.md",
+          "size": 2448537,
+          "checksum": "879d627ef5954cf73623e47497f750e4ea2b4e9d3a65df5b7bcc1fa0567877cc",
+          "source": "action"
+        },
+        {
+          "timestamp": 1790719823,
+          "version": "v2.4",
+          "versionCode": 295,
+          "zipUrl": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_295.zip",
+          "changelog": "https://raw.githubusercontent.com/rahaaatul/stratos/refs/heads/main/modules/zygisksu/v2.4_295.md",
+          "size": 2448549,
+          "checksum": "bd6b809c049bef32257aaf81cadc816ebabe874bcf3590e93cdbd898de5ef487",
+          "source": "action"
         }
       ]
     }

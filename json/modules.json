@@ -1,11 +1,11 @@
 {
   "id": "julgitrbj",
   "name": "Modules Repo by Julia",
-  "website": "https://github.com/juliazero/mrbj",
+  "website": "https://github.com/rahaaatul/stratos",
   "support": null,
   "donate": "https://ko-fi.com/juliazero",
   "submission": null,
-  "cover": "https://juliazero.github.io/mrbj/assets/cover.webp",
+  "cover": "https://rahaaatul.github.io/stratos/assets/cover.webp",
   "description": "My small modules repo.",
   "metadata": {
     "version": 1,
@@ -46,31 +46,31 @@
         "added": 1723905223.0,
         "source": "https://github.com/Enginex0/tricky-addon-enhanced",
         "antifeatures": null,
-        "build_metadata": "https://juliazero.github.io/mrbj/modules/TA_utl/track.yaml"
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/TA_utl/track.yaml"
       },
       "versions": [
         {
           "timestamp": 1773858091.0,
           "version": "v5.27.0",
           "versionCode": 50029,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/TA_utl/v5.27.0_50029.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/TA_utl/v5.27.0_50029.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/TA_utl/v5.27.0_50029.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/TA_utl/v5.27.0_50029.md",
           "size": 9675436
         },
         {
           "timestamp": 1777573762.0,
           "version": "v5.47.0",
           "versionCode": 50050,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/TA_utl/v5.47.0_50050.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/TA_utl/v5.47.0_50050.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/TA_utl/v5.47.0_50050.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/TA_utl/v5.47.0_50050.md",
           "size": 10235476
         },
         {
           "timestamp": 1777653181.0,
           "version": "v5.53.1",
           "versionCode": 50058,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/TA_utl/v5.53.1_50058.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/TA_utl/v5.53.1_50058.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/TA_utl/v5.53.1_50058.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/TA_utl/v5.53.1_50058.md",
           "size": 11346217
         }
       ]
@@ -107,31 +107,31 @@
         "added": null,
         "source": "https://github.com/chenxiaolong/MSD",
         "antifeatures": null,
-        "build_metadata": "https://juliazero.github.io/mrbj/modules/com.chiller3.msd/track.yaml"
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/com.chiller3.msd/track.yaml"
       },
       "versions": [
         {
           "timestamp": 1782604383.0,
           "version": "v2.3",
           "versionCode": 131840,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/com.chiller3.msd/v2.3_131840.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/com.chiller3.msd/v2.3_131840.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/com.chiller3.msd/v2.3_131840.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/com.chiller3.msd/v2.3_131840.md",
           "size": 4174118
         },
         {
           "timestamp": 1784338009.0,
           "version": "v2.4",
           "versionCode": 132096,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/com.chiller3.msd/v2.4_132096.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/com.chiller3.msd/v2.4_132096.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/com.chiller3.msd/v2.4_132096.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/com.chiller3.msd/v2.4_132096.md",
           "size": 4154880
         },
         {
           "timestamp": 1789768955.0,
           "version": "v2.5",
           "versionCode": 132352,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/com.chiller3.msd/v2.5_132352.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/com.chiller3.msd/v2.5_132352.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/com.chiller3.msd/v2.5_132352.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/com.chiller3.msd/v2.5_132352.md",
           "size": 4146040
         }
       ]
@@ -167,31 +167,31 @@
         "added": null,
         "source": "https://github.com/Hybrid-Mount/meta-hybrid_mount",
         "antifeatures": null,
-        "build_metadata": "https://juliazero.github.io/mrbj/modules/hybrid_mount/track.yaml"
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/hybrid_mount/track.yaml"
       },
       "versions": [
         {
           "timestamp": 1790697697.0,
           "version": "6.2.2",
           "versionCode": 602002999,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/hybrid_mount/6.2.2_602002999.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/hybrid_mount/6.2.2_602002999.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/hybrid_mount/6.2.2_602002999.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/hybrid_mount/6.2.2_602002999.md",
           "size": 6713210
         },
         {
           "timestamp": 1790709260.0,
           "version": "6.2.3-rc.1",
           "versionCode": 602003301,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/hybrid_mount/6.2.3-rc.1_602003301.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/hybrid_mount/6.2.3-rc.1_602003301.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/hybrid_mount/6.2.3-rc.1_602003301.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/hybrid_mount/6.2.3-rc.1_602003301.md",
           "size": 6728704
         },
         {
           "timestamp": 1790773921.0,
           "version": "6.2.3-rc.2",
           "versionCode": 602003302,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/hybrid_mount/6.2.3-rc.2_602003302.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/hybrid_mount/6.2.3-rc.2_602003302.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/hybrid_mount/6.2.3-rc.2_602003302.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/hybrid_mount/6.2.3-rc.2_602003302.md",
           "size": 4874366
         }
       ]
@@ -223,31 +223,31 @@
         "added": null,
         "source": "https://github.com/Keinta15/Magisk-iOS-Emoji",
         "antifeatures": null,
-        "build_metadata": "https://juliazero.github.io/mrbj/modules/iOS_Emoji/track.yaml"
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/iOS_Emoji/track.yaml"
       },
       "versions": [
         {
           "timestamp": 1745678577.0,
           "version": "v18.4",
           "versionCode": 18400,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/iOS_Emoji/v18.4_18400.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/iOS_Emoji/v18.4_18400.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/iOS_Emoji/v18.4_18400.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/iOS_Emoji/v18.4_18400.md",
           "size": 42415955
         },
         {
           "timestamp": 1774459589.0,
           "version": "v18.4.1",
           "versionCode": 18401,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/iOS_Emoji/v18.4.1_18401.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/iOS_Emoji/v18.4.1_18401.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/iOS_Emoji/v18.4.1_18401.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/iOS_Emoji/v18.4.1_18401.md",
           "size": 42416591
         },
         {
           "timestamp": 1782413159.0,
           "version": "v26.4",
           "versionCode": 26400,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/iOS_Emoji/v26.4_26400.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/iOS_Emoji/v26.4_26400.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/iOS_Emoji/v26.4_26400.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/iOS_Emoji/v26.4_26400.md",
           "size": 34470804
         }
       ]
@@ -293,23 +293,23 @@
         "added": null,
         "source": "https://github.com/MeowDump/Integrity-Box",
         "antifeatures": null,
-        "build_metadata": "https://juliazero.github.io/mrbj/modules/playintegrity/track.yaml"
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/playintegrity/track.yaml"
       },
       "versions": [
         {
           "timestamp": 1766902891.0,
           "version": "v27.1",
           "versionCode": 27100,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/playintegrity/v27.1_27100.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/playintegrity/v27.1_27100.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/playintegrity/v27.1_27100.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/playintegrity/v27.1_27100.md",
           "size": 98901
         },
         {
           "timestamp": 1769680404.0,
           "version": "v28",
           "versionCode": 28000,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/playintegrity/v28_28000.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/playintegrity/v28_28000.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/playintegrity/v28_28000.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/playintegrity/v28_28000.md",
           "size": 430653
         }
       ]
@@ -350,31 +350,31 @@
         "added": null,
         "source": "https://github.com/KOWX712/PlayIntegrityFix",
         "antifeatures": null,
-        "build_metadata": "https://juliazero.github.io/mrbj/modules/playintegrityfix/track.yaml"
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/playintegrityfix/track.yaml"
       },
       "versions": [
         {
           "timestamp": 1782033373.0,
           "version": "v4.6-inject-s",
           "versionCode": 46,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/playintegrityfix/v4.6-inject-s_46.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/playintegrityfix/v4.6-inject-s_46.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/playintegrityfix/v4.6-inject-s_46.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/playintegrityfix/v4.6-inject-s_46.md",
           "size": 596223
         },
         {
           "timestamp": 1783763920.0,
           "version": "v4.7-inject-s",
           "versionCode": 47,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/playintegrityfix/v4.7-inject-s_47.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/playintegrityfix/v4.7-inject-s_47.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/playintegrityfix/v4.7-inject-s_47.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/playintegrityfix/v4.7-inject-s_47.md",
           "size": 660502
         },
         {
           "timestamp": 1783849380.0,
           "version": "v4.7-1-inject-s",
           "versionCode": 471,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/playintegrityfix/v4.7-1-inject-s_471.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/playintegrityfix/v4.7-1-inject-s_471.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/playintegrityfix/v4.7-1-inject-s_471.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/playintegrityfix/v4.7-1-inject-s_471.md",
           "size": 660329
         }
       ]
@@ -414,14 +414,14 @@
         "added": null,
         "source": "https://github.com/PerformanC/ReZygisk",
         "antifeatures": null,
-        "build_metadata": "https://juliazero.github.io/mrbj/modules/rezygisk/track.yaml"
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/rezygisk/track.yaml"
       },
       "versions": [
         {
           "timestamp": 1777180351.0,
           "version": "v1.0.0 (505-7e3db00-release)",
           "versionCode": 505,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/rezygisk/v1.0.0_505-7e3db00-release.zip",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/rezygisk/v1.0.0_505-7e3db00-release.zip",
           "changelog": "",
           "size": 518064
         },
@@ -429,7 +429,7 @@
           "timestamp": 1777778657.0,
           "version": "v1.0.0 (513-faccedf-release)",
           "versionCode": 513,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/rezygisk/v1.0.0_513-faccedf-release.zip",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/rezygisk/v1.0.0_513-faccedf-release.zip",
           "changelog": "",
           "size": 503427
         },
@@ -437,7 +437,7 @@
           "timestamp": 1778449348.0,
           "version": "v1.0.0 (515-333d423-release)",
           "versionCode": 515,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/rezygisk/v1.0.0_515-333d423-release.zip",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/rezygisk/v1.0.0_515-333d423-release.zip",
           "changelog": "",
           "size": 506334
         }
@@ -476,31 +476,31 @@
         "added": null,
         "source": "https://github.com/Enginex0/TEESimulator-RS",
         "antifeatures": null,
-        "build_metadata": "https://juliazero.github.io/mrbj/modules/tricky_store/track.yaml"
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/tricky_store/track.yaml"
       },
       "versions": [
         {
           "timestamp": 1779257174.0,
           "version": "v6.0.0-235",
           "versionCode": 235,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/tricky_store/v6.0.0-235_235.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/tricky_store/v6.0.0-235_235.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/tricky_store/v6.0.0-235_235.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/tricky_store/v6.0.0-235_235.md",
           "size": 2760536
         },
         {
           "timestamp": 1780145211.0,
           "version": "v6.0.1-251",
           "versionCode": 251,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/tricky_store/v6.0.1-251_251.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/tricky_store/v6.0.1-251_251.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/tricky_store/v6.0.1-251_251.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/tricky_store/v6.0.1-251_251.md",
           "size": 2760492
         },
         {
           "timestamp": 1781884465.0,
           "version": "v6.0.1-282",
           "versionCode": 282,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/tricky_store/v6.0.1-282_282.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/tricky_store/v6.0.1-282_282.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/tricky_store/v6.0.1-282_282.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/tricky_store/v6.0.1-282_282.md",
           "size": 2765128
         }
       ]
@@ -537,31 +537,31 @@
         "added": null,
         "source": "https://github.com/j-hc/zygisk-detach",
         "antifeatures": null,
-        "build_metadata": "https://juliazero.github.io/mrbj/modules/zygisk-detach/track.yaml"
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/zygisk-detach/track.yaml"
       },
       "versions": [
         {
           "timestamp": 1775565126.0,
           "version": "v1.23.1",
           "versionCode": 33,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/zygisk-detach/v1.23.1_33.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/zygisk-detach/v1.23.1_33.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/zygisk-detach/v1.23.1_33.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/zygisk-detach/v1.23.1_33.md",
           "size": 370346
         },
         {
           "timestamp": 1783594311.0,
           "version": "v1.23.2",
           "versionCode": 34,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/zygisk-detach/v1.23.2_34.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/zygisk-detach/v1.23.2_34.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/zygisk-detach/v1.23.2_34.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/zygisk-detach/v1.23.2_34.md",
           "size": 370347
         },
         {
           "timestamp": 1789936237.0,
           "version": "v1.24.0",
           "versionCode": 35,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/zygisk-detach/v1.24.0_35.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/zygisk-detach/v1.24.0_35.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/zygisk-detach/v1.24.0_35.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/zygisk-detach/v1.24.0_35.md",
           "size": 371409
         }
       ]
@@ -604,22 +604,22 @@
         "added": null,
         "source": "https://github.com/JingMatrix/Vector",
         "antifeatures": null,
-        "build_metadata": "https://juliazero.github.io/mrbj/modules/zygisk_vector/track.yaml"
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/zygisk_vector/track.yaml"
       },
       "versions": [
         {
           "timestamp": 1774207705.0,
           "version": "v2.0 (3021)",
           "versionCode": 3021,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/zygisk_vector/v2.0_3021.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/zygisk_vector/v2.0_3021.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/zygisk_vector/v2.0_3021.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/zygisk_vector/v2.0_3021.md",
           "size": 8434264
         },
         {
           "timestamp": 1785650519.0,
           "version": "v2.1 (3073-b09a9787-JingMatrix-Vector)",
           "versionCode": 3073,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/zygisk_vector/v2.1_3073-b09a9787-JingMatrix-Vector.zip",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/zygisk_vector/v2.1_3073-b09a9787-JingMatrix-Vector.zip",
           "changelog": "",
           "size": 9260925
         },
@@ -627,7 +627,7 @@
           "timestamp": 1785836308.0,
           "version": "v2.2 (3080-88f8e1fa-JingMatrix-Vector)",
           "versionCode": 3080,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/zygisk_vector/v2.2_3080-88f8e1fa-JingMatrix-Vector.zip",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/zygisk_vector/v2.2_3080-88f8e1fa-JingMatrix-Vector.zip",
           "changelog": "",
           "size": 9316843
         }
@@ -667,31 +667,31 @@
         "added": null,
         "source": "https://github.com/JingMatrix/NeoZygisk",
         "antifeatures": null,
-        "build_metadata": "https://juliazero.github.io/mrbj/modules/zygisksu/track.yaml"
+        "build_metadata": "https://rahaaatul.github.io/stratos/modules/zygisksu/track.yaml"
       },
       "versions": [
         {
           "timestamp": 1757862999.0,
           "version": "v2.2 (266-559fc1d-release)",
           "versionCode": 266,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/zygisksu/v2.2_266-559fc1d-release.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/zygisksu/v2.2_266-559fc1d-release.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/zygisksu/v2.2_266-559fc1d-release.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/zygisksu/v2.2_266-559fc1d-release.md",
           "size": 3285848
         },
         {
           "timestamp": 1771031332.0,
           "version": "v2.3 (275-671937c-release)",
           "versionCode": 275,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/zygisksu/v2.3_275-671937c-release.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/zygisksu/v2.3_275-671937c-release.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/zygisksu/v2.3_275-671937c-release.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/zygisksu/v2.3_275-671937c-release.md",
           "size": 3208704
         },
         {
           "timestamp": 1786215826.0,
           "version": "v2.4 (289-08080ef-release)",
           "versionCode": 289,
-          "zipUrl": "https://juliazero.github.io/mrbj/modules/zygisksu/v2.4_289-08080ef-release.zip",
-          "changelog": "https://juliazero.github.io/mrbj/modules/zygisksu/v2.4_289-08080ef-release.md",
+          "zipUrl": "https://rahaaatul.github.io/stratos/modules/zygisksu/v2.4_289-08080ef-release.zip",
+          "changelog": "https://rahaaatul.github.io/stratos/modules/zygisksu/v2.4_289-08080ef-release.md",
           "size": 2401208
         }
       ]

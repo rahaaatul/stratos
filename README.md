@@ -4,13 +4,13 @@
 ## Add to MMRL or MRepo 
 
 ```
-https://juliazero.github.io/mrbj
+https://rahaaatul.github.io/stratos
 ```
 
 ## Add to MMRL-CLI
 
 ```shell
-mmrl repo add "https://juliazero.github.io/mrbj/json/modules.json"
+mmrl repo add "https://rahaaatul.github.io/stratos/json/modules.json"
 ```
 
 ## How to update?

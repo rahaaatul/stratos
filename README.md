@@ -1,4 +1,5 @@
-# Modules Repo by Julia
+![Stratos](assets/banner.png)
+
 - This repository stores modules for [MMRL](https://github.com/DerGoogler/MMRL) and [MRepo](https://github.com/MRepoApp/MRepo.git).
 
 ## Add to MMRL or MRepo 

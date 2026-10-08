@@ -1,15 +1,15 @@
 {
-  "id": "julgitrbj",
+  "id": "rahithtos",
   "name": "Modules Repo by Julia",
   "website": "https://github.com/rahaaatul/stratos",
   "support": null,
   "donate": "https://ko-fi.com/juliazero",
   "submission": null,
-  "cover": "https://rahaaatul.github.io/stratos/assets/cover.png",
+  "cover": null,
   "description": "My small modules repo.",
   "metadata": {
     "version": 1,
-    "timestamp": 1791208922.763693
+    "timestamp": 1791437819.238827
   },
   "modules": [
     {
